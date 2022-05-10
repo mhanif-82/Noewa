@@ -1,0 +1,1492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{fa45448f-e92e-1604-3a67-628a7226b7c0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>GameCreator.Editor.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_2022_1_0;UNITY_2022_1;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;USE_QUERY_BUILDER;USE_SEARCH_EXTENSION_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_ANDROID;TEXTCORE_1_0_OR_NEWER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_ETC_COMPRESSION;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;OOTII_AC;OOTII_MC;OOTII_SWMP;PLAYMAKER;PLAYMAKER_1_9;PLAYMAKER_1_9_1;PLAYMAKER_1_8_OR_NEWER;PLAYMAKER_1_8_5_OR_NEWER;PLAYMAKER_1_9_OR_NEWER;PLAYMAKER_TMPRO;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;DEVELOPMENT_BUILD</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Drawers\MaterialSoundDefaultDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Panels\HubExplorerContent.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Documentation\Elements\DocumentationBaseElement.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Drawers\VolumeCapsuleDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\ChangeFloatDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\FuzzyFinder\FuzzyFinder.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\Selectors\TypeSelectorMemory.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Attributes\Drawers\Conditions\ConditionHideDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\Interfaces\IPolymorphicListTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\ChangePositionDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\FlexibleSpace.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Welcome\WelcomeInternalTextures.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldColorDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Percentage\PercentageWithLabelDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\Value\TypeSelectorValueDropdown.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\Manipulators\PolymorphicItemDrag.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Markers\MarkerEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Audio\Drawers\AudioConfigDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\Tools\TPolymorphicItemTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\TChangeValueDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Systems\Upload.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\Manipulators\PolymorphicItemManipulator.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Selectors\TypeSelectorElementVolume.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyQuaternionDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Subunits\MotionInteractionDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\CharacterKernelDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Input\Properties\InputPropertyButtonDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Documentation\Elements\DocumentationComplete.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Editors\GlobalNameVariablesEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Events\EventElement.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\ITypeSelector.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\GameObject\UseRaycastDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\DropdownTMPPropertyIntegerEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Welcome\WelcomeManager.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\GameObject\NavAreaValueDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\Tools\InstructionItemTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\IUnitDriverDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Tools\VolumesTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\ShotTypeDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemFirstPersonDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Drawers\Elements\TypeSelectorValueElement.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Tools\MaterialSoundsTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\CameraTransitionDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Documentation\Downloader\Documentation.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Fields\TNamePickTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Footsteps\Drawers\FootstepsDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Documentation\Elements\DocumentationSummary.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\Editors\RememberEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\PackagePayload.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Editors\SkeletonEditorPopup.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Editors\LocalListVariablesEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Tools\RigLayerTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyVector3Drawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\GameObject\TNavAreaDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\HitPayload.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Selectors\TypeSelectorCondition.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Drawers\VolumeSphereDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Drawers\InstallerEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\IUnitPlayerDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Systems\Http.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\Templates\InstallerContent.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Panels\SettingsContentList.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\ChangeIntegerDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Get\FieldGetLocalNameDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\Manipulators\PolymorphicItemDrop.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Systems\Collection.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Utils\DirectoryUtils.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Input\Properties\InputPropertyValueVector2Drawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Drawers\GeneralAudioDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\Drawers\ExitAnimationClipDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\SliderPropertyFloatEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Comparers\CompareMinDistanceOrNoneDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TypeReference\SelectTypeElement.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Utilities\Detectors\TDetectorListVariableDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Skins\SkinEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\Tools\InstructionListTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Spots\Drawers\SpotListDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarMarker.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Utils\TypeUtils.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Editors\TAssetRepositoryEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Percentage\TPercentageDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Drawers\WelcomeRepositoryDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\WarningMessage.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Drawers\TextReferenceDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Curves\SegmentDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarActions.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\ChangeQuaternionDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\StateAnimationEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Editors\GlobalListVariablesEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarHotspot.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Structures\Save\Drawers\UniqueIDDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Items\NameVariableTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\InputDropdown.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemHeadBobbingDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\IUnitFacingDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Utilities\Detectors\DetectorLocalNameVariableDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Input\InputActionFromAssetDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\StateEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Subunits\MotionAccelerationDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Busy\BusyTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Drawers\VersionDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Selectors\TypeSelectorVolume.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Drawers\Elements\TTypeSelectorElement.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldGameObjectDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\Package.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Panels\HubExplorerContentList.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\TScriptGenerator.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\List\TTypeSelectorList.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Systems\Auth.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Spots\Tools\SpotItemTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TypeReference\TypeReferenceDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\ID\IdPathStringDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Values\TValueDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\StateCompleteLocomotionEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\TToolbarButton.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\Drawers\StandDrawers.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertySpriteDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldSpriteDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\Version.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TimeMode\TimeModeDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldStringDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Fields\UnitFacingDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\ChangeDirectionDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Utils\CopyPasteUtils.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Editors\ShotCameraEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Curves\BezierDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\TReflectionMemberDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\GameCreatorHub.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Input\Properties\TInputPropertyDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Pool\Drawers\PoolFieldDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemFollowDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Editors\LocalNameVariablesEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Spots\Selectors\TypeSelectorSpot.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldFloatDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Selectors\TypeSelectorRigLayer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Elements\ListTypeElement.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\FuzzyFinder\FuzzyAlgorithm.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemAnimationDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\TReflectionPropertyDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Drawers\BoneDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\EditorToolbarGameCreator.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Drawers\MaterialSoundsDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\Drawers\InstructionDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\TogglePropertyBoolEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Lists\IndexListDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Lists\NameListTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\Date.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Utilities\Detectors\TDetectorNameVariableDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Icons\IconBusyLegR.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Editors\SkeletonEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Signals\Drawers\SignalDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Spots\Drawers\SpotDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Subunits\MotionJumpDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Footsteps\Tools\FootTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Drawers\VolumesDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Attributes\Drawers\Conditions\ConditionDisableDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Get\FieldGetLocalListDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\Parameter.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Editors\MaterialSoundsAssetEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\LabelTitle.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\StateOverrideAnimatorEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Subunits\AnimimTwitchingDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemAnchorDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\Drawers\Instructions\SceneEntriesDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyBoolDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Views\Lists\NameListView.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Input\Properties\InputPropertyValueFloatDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\Tools\MemoriesTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Views\Lists\TListView.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldDoubleDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Editors\TCameraEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Ragdoll\RagdollDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Drawers\InstallDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\InstructionGenerator.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Fields\LocalNamePickTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyIntegerDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Systems\Download.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Utils\SerializationUtils.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Drawers\RigLayersDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\InfoMessage.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemZoomDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Set\FieldSetGlobalListDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemHeadLeaningDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\Drawers\AirborneDrawers.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TextArea\BaseTextAreaDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\TTypeSelector.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Drawers\DependencyDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\Templates\InstallerManagerWindow.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Panels\HubExplorerWindow.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Icons\IconBusyBase.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\ConditionGenerator.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Drawers\InverseKinematicsDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyTextureDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\ShakeEffectDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Lists\NameListDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\TypeBook\TypeBook.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldBoolDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldVector3Drawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Tools\MaterialSoundTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Views\Lists\IndexListView.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Events\EventDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarTrigger.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\Selectors\TypeSelectorElementMemory.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldQuaternionDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\ChangeColorDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Assets\Installer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Runtimes\ListVariablesRuntimeDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\FuzzyFinder\FuzzyNode.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Properties\Fields\PropertyGetInstantiateDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Classes\Dependency.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Common\CopyRunnerEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Drawers\ConditionListDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Drawers\BranchDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\AnimimGraphDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\IUnitAnimimDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldVector2Drawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Drawers\RigLookTrackDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\TypeBook\TypePage.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Drawers\ConditionDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Icons\IconWindowSettings.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Manipulators\MouseDropdownManipulator.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TypeReference\Types\TypeReferenceComponentDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Drawers\RigFeetPlantDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Subunits\AnimimBreathingDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\EventGenerator.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Percentage\PercentageWithoutLabelDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Panels\SettingsContentDetails.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldIntegerDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Attributes\Drawers\Conditions\ConditionBaseDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\GameObject\NavAreaMaskDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\List\TypeSelectorListFancy.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Elements\PickFieldElement.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\CharacterInfo\DropModelManipulator.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyVector2Drawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyStringDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TextArea\TextAreaLabelDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\Selectors\TypeSelectorInstruction.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Properties\TypeSelectorFancyProperty.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemNoiseDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Spots\Tools\SpotListTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Set\FieldSetLocalListDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Components\TriggerEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyFloatDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Utilities\UnityUIUtilities.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Items\IndexVariableTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Runtimes\NameVariablesRuntimeDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\CharacterInfo\ModelTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Comparers\CompareIntegerDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Busy\BusyDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Drawers\MaterialSoundsDataDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\TReflectionFieldDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\SettingsWindow.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\Windows\TypeSelectorFancyPopup.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\ChangeScaleDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Views\Items\NameVariableView.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\GameObject\LayerMaskValueDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Utilities\Detectors\DetectorGlobalListVariableDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarShot.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Comparers\CompareGameObjectOrAnyDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\Value\TTypeSelectorValue.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\StateTLocomotionEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\SceneReference\SceneReferenceDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Tools\ConditionListTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\TypeBook\TypeNode.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\Templates\InstallerContentList.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Icons\IconBusyNone.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Set\FieldSetLocalNameDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Drawers\VolumeBoxDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\Drawers\EntryAnimationClipDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Attributes\Drawers\Conditions\ConditionDisablePlaymodeDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TransitionDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyColorDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Attributes\Drawers\Appearance\IndentDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarLocalListVariables.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Box\TBoxDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\Drawers\CrouchDrawers.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\DropdownPropertyIntegerEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\EventCallbackEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\EditorSettings\EditorSettingsRegistrar.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Get\FieldGetGlobalListDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Components\BaseActionsEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Classes\Install.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\PackageBlob.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\InstallManager.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\Dependency.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\SuccessMessage.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Icons\IconWindowHub.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Editors\WelcomeSettingsEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Documentation\Window\DocumentationPopup.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\Templates\InstallerElementInstall.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Panels\HubExplorerToolbar.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\StateDataDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Footsteps\Tools\FeetTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Views\Items\TVariableView.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Title\TTitleDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Attributes\Drawers\Conditions\ConditionShowDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TypeReference\Types\TypeReferenceBehaviourDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Welcome\WelcomeCommands.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\TShotSystemDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\HitData.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Drawers\BranchListDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Classes\Version.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Drawers\IRepositoryDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarPlayer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TypeReference\TypeSelectorFancyType.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Tools\ConditionItemTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\ID\IdStringDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\Drawers\MemoriesDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Comparers\CompareDirectionDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\Value\TypeSelectorValueFancy.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarLocalNameVariables.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemLockOnDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\SpaceSmaller.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Properties\IPropertyDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\Icons\IconWindowInstaller.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\InputFieldTMPPropertyStringEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Spots\Selectors\TypeSelectorElementSpot.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TextArea\TextAreaWideDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Selectors\TypeSelectorElementCondition.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Tools\BranchItemTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\ChangeBoolDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\SpaceSmallest.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Documentation\DocumentationHub.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Fields\UnitPlayerDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Utilities\Collectors\CollectorListVariableDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyDoubleDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemPeekDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\SpaceSmall.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\Tools\TPolymorphicListTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldTextureDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Panels\HubExplorerContentDetails.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemOrbitDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TextArea\TextAreaFieldDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Views\Items\IndexVariableView.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\InputFieldPropertyStringEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\EditorSettings\EditorSettingsCore.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Set\FieldSetGlobalNameDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\TShotTypeElement.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Structures\Save\Drawers\SaveUniqueIDDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\RenderPipelines.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\ErrorMessage.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Interaction\InteractionModeDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Panels\HubSettingsWindow.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Get\FieldGetGlobalNameDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Drawers\BoneRackDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Comparers\CompareFloatDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\CharacterEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemLookDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Tools\RigLayersTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Lists\IndexListTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\ButtonInstructionsEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarCharacter.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\GameObject\NavLinkTypeDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\GameObject\TagValueDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Drawers\VolumeDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\Selectors\TypeSelectorElementInstruction.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\CameraAvoidClipDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Components\ActionsEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Variables\IndexVariableDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarConditions.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Icons\IconBusyDead.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Fields\GlobalNamePickTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Variables\NameVariableDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyGameObjectDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Drawers\RigLeanDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Utilities\Detectors\DetectorLocalListVariableDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\Templates\InstallerContentDetails.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\Interfaces\IPolymorphicItemTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\Tools\MemoryTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Selectors\TypeSelectorElementRigLayer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Utils\StyleSheetUtils.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\Templates\InstallerElementModule.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\Drawers\MemoryDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Components\HotspotEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Properties\Elements\PropertyElement.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Drawers\MaterialSoundTextureDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\Drawers\InstructionListDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Tools\BranchListTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Tools\VolumeTool.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Structures\Save\Drawers\SaveDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Icons\IconBusyArmR.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\TUnitDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Utilities\Detectors\DetectorGlobalNameVariableDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Section\TSectionDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Components\ConditionsEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Icons\IconBusyLegL.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Attributes\Drawers\Conditions\ConditionEnableDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemTrackDrawer.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Icons\IconBusyArmL.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\StateBasicLocomotionEditor.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\TypeBook\TypeChapter.cs" />
+     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\IUnitMotionDrawer.cs" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Signals\StyleSheets\Signal.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Box\TBox.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Kernel.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\StyleSheets\Memories.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\StyleSheets\TypeSelectorFancy.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\Templates\Package_Instruction.txt" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\Shared\CommonValues.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Volume-Body.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Input\StyleSheets\InputActionFromAsset.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Structures\Save\StyleSheets\SaveUniqueID.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Skeleton.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\State.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\StyleSheets\Polymorphic-List.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Volume-Head.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\StyleSheets\InputField.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\StyleSheets\Memory-Head.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\StyleSheets\IndexList.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Title\TitleDrawer.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\Templates\Template_Condition.txt" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\RigLayer.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\Shared\CommonColors_Dark.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Documentation\Styles\Documentation.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Character.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Busy.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\StyleSheets\SettingsDetails.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Stylesheets\HubExplorerWindow.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Data\Videos.txt" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Spots\StyleSheets\Hotspot.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Stylesheets\HubSettingsWindow.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\StyleSheets\PickFieldElement.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Markers\StyleSheets\Marker.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\StyleSheets\MaterialSound-Body.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TextArea\TextArea.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\StyleSheets\Instruction-Head.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\BoneRack.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\Templates\Package_Condition.txt" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Feet.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\StyleSheets\Slider.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\StyleSheets\Installer.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\StyleSheets\Instruction-Body.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\StyleSheets\ReflectionMember.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\ErrorMessage.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\Templates\Template_Event.txt" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\StyleSheets\Toggle.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\SkeletonPopup.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\StyleSheets\Welcome.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\StyleSheets\Branch-Head.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\InfoMessage.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\Shared\CommonColors_Light.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Foot-Head.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\StyleSheets\SettingsWindow.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Data\Welcome.txt" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\StyleSheets\Instructions-List.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\StyleSheets\SettingsList.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\StyleSheets\Branch-Body.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\StyleSheets\TextReference.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\SuccessMessage.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Properties\Styles\PropertyElement.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\StyleSheets\Branch-List.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\StyleSheets\Polymorphic-Item-Drop.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\Templates\Package_Event.txt" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\StyleSheets\Condition-List.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Data\Examples.txt" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Model.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\StyleSheets\Condition-Body.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\StyleSheets\Condition-Head.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\GameCreator.Editor.Core.asmdef" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Unit.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Volumes.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\Templates\Template_Instruction.txt" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\StyleSheets\MaterialSound-Head.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\StyleSheets\ShotType.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Data\Hub.txt" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\StyleSheets\Polymorphic-Item-Body.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\StyleSheets\RuntimeGlobalList.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Section\TSection.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Data\Documentation.txt" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\StyleSheets\MaterialSounds.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Data\Discord.txt" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Structures\Save\StyleSheets\Save.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\WarningMessage.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TypeReference\StyleSheets\SelectType.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Foot-Body.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\StyleSheets\Dropdown.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\StyleSheets\Memory-Body.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\RigLayers.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\StyleSheets\NameList.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\StyleSheets\Button.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\StyleSheets\NamePickTool.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\Shared\CommonElements.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Documentation\Styles\Popup.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\InputDropdown.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Events\StyleSheets\Event.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\StyleSheets\Polymorphic-Item-Head.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\StyleSheets\Repository.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Structures\Save\StyleSheets\UniqueID.uss" />
+     <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\StyleSheets\InstallerWindow.uss" />
+    <Reference Include="UnityEngine">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.NVIDIAModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.NVIDIAModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.DeviceSimulatorModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEditor.DeviceSimulatorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.DiagnosticsModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEditor.DiagnosticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PackageManagerUIModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PresetsUIModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEditor.PresetsUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.QuickSearchModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEditor.QuickSearchModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreFontEngineModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreTextEngineModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIBuilderModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEditor.UIBuilderModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIServiceModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UWP.Extensions">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayMakerEditor">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Assets\PlayMaker\Editor\PlayMakerEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayMakerEditorResources">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Assets\PlayMaker\Editor\PlayMakerEditorResources.dll</HintPath>
+    </Reference>
+    <Reference Include="ConditionalExpression">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Assets\PlayMaker\ConditionalExpression.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Pdb">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Library\PackageCache\com.unity.burst@1.7.0\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Library\PackageCache\com.unity.collab-proxy@1.15.13\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="ConditionalExpressionEditor">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Assets\PlayMaker\Editor\ConditionalExpressionEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Library\PackageCache\com.unity.collab-proxy@1.15.13\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Library\PackageCache\com.unity.collab-proxy@1.15.13\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Library\PackageCache\com.unity.collab-proxy@1.15.13\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Mdb">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Library\PackageCache\com.unity.burst@1.7.0\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayMaker">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Assets\Plugins\PlayMaker\PlayMaker.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Library\PackageCache\com.unity.burst@1.7.0\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Library\PackageCache\com.unity.burst@1.7.0\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Rocks">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Library\PackageCache\com.unity.burst@1.7.0\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+        <HintPath>D:\Games_Project\Bitroid\Game Based Learning\Under Sea\Noesa - Salin\Noesa\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Types">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Gradle">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Configuration.Install.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.DataSetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Services.Client">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Services">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices.Protocols">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.DirectoryServices.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Drawing.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.EnterpriseServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel.Selectors">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IdentityModel.Selectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Json">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Json.Microsoft">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Json.Microsoft.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Messaging">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Core">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Debugger">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Debugger.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Experimental">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Experimental.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Observable.Aliases">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Observable.Aliases.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Providers">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Runtime.Remoting">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Runtime.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Windows.Forms">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Windows.Threading">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Windows.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Context">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reflection.Context.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.DurableInstancing">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.DurableInstancing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.Serialization.Formatters.Soap.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Activation">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceModel.Activation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Discovery">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceModel.Discovery.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Routing">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceModel.Routing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceProcess.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Dataflow">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Threading.Tasks.Dataflow.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.ApplicationServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.DynamicData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Extensions.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.SelfHost">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Http.SelfHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mobile">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.RegularExpressions">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Routing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Windows.Forms.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Workflow.Activities">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Workflow.Activities.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Workflow.ComponentModel">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Workflow.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Workflow.Runtime">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Workflow.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Rtc">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Http.Rtc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.DispatchProxy">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.DispatchProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Duplex">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Duplex.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.NetTcp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+        <HintPath>D:\aplication\unity\Hub\Editor\Unity 2022.1.0b13\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\netstandard.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.InputSystem.csproj">
+      <Project>{9db52a4c-50dc-713c-87a3-47a6d816f45b}</Project>
+      <Name>Unity.InputSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="GameCreator.Runtime.Core.csproj">
+      <Project>{522f9e8c-6c72-1e71-29b6-dce8becd5a92}</Project>
+      <Name>GameCreator.Runtime.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
+      <Project>{9b060e3b-dd8f-b450-a4fb-9dd08ea7893a}</Project>
+      <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{c7f07730-2f93-4d0e-b93c-54b2ddee9dfe}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{b8080646-61cd-afea-e820-0f2693561a7c}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{13c5d954-1709-65ab-e588-ede9c24a54b6}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{123a3d88-e6e9-d8b3-1742-f28776b75c12}</Project>
+      <Name>UnityEngine.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{77318345-6dee-f743-a7fe-71650e0324ff}</Project>
+      <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
